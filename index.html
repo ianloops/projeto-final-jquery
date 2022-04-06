@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo da velha</title>
+		<script src="jquery-2.2.1.js"></script>
+		<script src="jogo.js"></script>
+	</head>
+
+	<body>
+		<div id="pagina-inicial">
+			<table border="0" width="600px" align="center">
+				<tbody>
+					<tr>
+						<td colspan="3" align="center">
+							<h1>JOGO DA VELHA</h1>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<img src="imagens/jogador_1.png">
+							<br>
+							<input type="text" maxlength="10" placeholder="Jogador 1" id="inserir-nome-jogador1">
+						</td>
+						<td align="center">
+							<img src="imagens/iniciar.png" id="btn-iniciar-jogo">
+						</td>
+						<td align="center">
+							<img src="imagens/jogador_2.png">
+							<br>
+							<input type="text" maxlength="10" placeholder="Jogador 2" id="inserir-nome-jogador2">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="palco-jogo" style="margin-top: 50px; text-align: center; display:none;">
+			<div style="display: inline-block;">
+				<img src="imagens/jogador_1.png">
+				<br>
+				<span id="nome-jogador1"></span>
+			</div>
+
+			<div style="display: inline-block;">
+				<table border="0">
+					<tbody>
+						<tr>
+							<td style="border-bottom: 1px groove red; border-right: 1px groove red;">
+								<div style="height: 100px; width: 100px" class="jogada" id="a-1"></div>
+							</td>
+							<td style="border-bottom: 1px groove red; border-right: 1px groove red;">
+								<div style="height: 100px; width: 100px" class="jogada" id="a-2"></div>
+							</td>
+							<td style="border-bottom: 1px groove red;">
+								<div style="height: 100px; width: 100px" class="jogada" id="a-3"></div>
+							</td>
+						</tr>
+						<tr>
+							<td style="border-bottom: 1px groove red; border-right: 1px groove red;">
+								<div style="height: 100px; width: 100px" class="jogada" id="b-1"></div>
+							</td>
+							<td style="border-bottom: 1px groove red; border-right: 1px groove red;">
+								<div style="height: 100px; width: 100px" class="jogada" id="b-2"></div>
+							</td>
+							<td style="border-bottom: 1px groove red;">
+								<div style="height: 100px; width: 100px" class="jogada" id="b-3"></div>
+							</td>
+						</tr>
+						<tr>
+							<td style="border-right: 1px groove red;">
+								<div style="height: 100px; width: 100px" class="jogada" id="c-1"></div>
+							</td>
+							<td style="border-right: 1px groove red;">
+								<div style="height: 100px; width: 100px" class="jogada" id="c-2"></div>
+							</td>
+							<td>
+								<div style="height: 100px; width: 100px" class="jogada" id="c-3"></div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div style="display: inline-block;">
+				<img src="imagens/jogador_2.png">
+				<br>
+				<span id="nome-jogador2"></span>
+			</div>
+		</div>
+	</body>
+</html>
